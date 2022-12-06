@@ -1,5 +1,11 @@
+@font-face {
+    font-family: youtubefonte;
+    src: url(../fontes/youtube-sans-light.ttf);
+}
+
 *{
     box-sizing: border-box;
+    font-family: youtubefonte;
 }
 
 .nav{
@@ -35,6 +41,7 @@
 
 .search > input{
     font-size: 16px;
+    color: black;
 }
 
 .lupa{
@@ -56,6 +63,7 @@
     font-size: 21px;
 }
 
+/* /////////////////////// */
 
 .videos-grid{
     display: grid;
@@ -73,13 +81,99 @@
     grid-area: lateral;
 }
 
+.main-video-principal > p{
+    color: #065fd4;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.main-video-principal > h2{
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.interativo{
+    display: flex;
+    align-items: center;
+}
+
+.canal{
+    /* width: 183px; */
+    display: grid;
+    grid-template-columns: 61px 61px 61px;
+    grid-template-rows: 22px 22px;
+    align-items: center;
+}
+
+.nome-canal{
+    display: flex;
+    align-items: center;
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+
+.nome-canal > h3{
+    margin: 0;
+}
+
+.canal > p{
+    margin: 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 15px;
+}
+
+.logo-canal{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.inscrever-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 36px;
+    background-color: #0f0f0f;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.inscrever-btn > p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.nome-canal > i{
+    margin-left: 5px;
+}
+
+/* //////////////////// */
+
 .uni-v{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "video textos";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 10px;
+    grid-gap: 10px;
 }
 
 .uni-v > img{
-    grid-area: video;
+    grid-row: 1/3;
+    border-radius: 8px;
+}
+
+.textos{
+    grid-column: 2/4;
+}
+
+.textos > h5{
+    color: #5b5b5b;
+    margin: 0px;
+}
+.textos > h4{
+    margin: 0px;
+    margin-bottom: 8px
 }
