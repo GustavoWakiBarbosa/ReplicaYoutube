@@ -22,6 +22,7 @@
 }
 
 .iconebar{
+    cursor: pointer;
     font-size: 21px;
     margin-left: 30px;
 }
@@ -45,6 +46,7 @@
 }
 
 .lupa{
+    cursor: pointer;
     margin-left: 5px;
     font-size: 21px;
 }
@@ -59,6 +61,7 @@
 }
 
 .icones{
+    cursor: pointer;
     margin-right: 30px;
     font-size: 21px;
 }
@@ -68,18 +71,30 @@
 .videos-grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "principal lateral";
     grid-gap: 25px;
     margin-left: 90px;
 }
 
-.video-principal{
-    grid-area: principal;
+/* .carrossel-filtros{
+    display: flex;
+    margin-bottom: 18px;
+    overflow: scroll;
+    width: 350px;
 }
 
-.videos-laterais{
-    grid-area: lateral;
-}
+.filtros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 36px;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    min-width: 100px;
+    max-width: 500px;
+} */
 
 .main-video-principal > p{
     color: #065fd4;
@@ -142,6 +157,7 @@
 }
 
 .inscrever-btn > p{
+    cursor: pointer;
     font-size: 15px;
     font-weight: 600;
     color: #ffffff;
@@ -151,9 +167,80 @@
     margin-left: 5px;
 }
 
+.social{
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.social  p {
+    margin-left: 10px;
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 36px;
+    background-color: #e4e4e4;
+    border-radius: 30px;
+}
+
+.dislike{
+    margin-left: 5px;
+}
+
+.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 36px;
+    background-color: #e4e4e4;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.dowload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 36px;
+    background-color: #e4e4e4;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.clip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 36px;
+    background-color: #e4e4e4;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #e4e4e4;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
 /* //////////////////// */
 
+
 .uni-v{
+    cursor: pointer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 10px;
