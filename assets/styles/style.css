@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: youtubefonte;
 }
+a:link{
+    text-decoration: none;
+}
+
+
 
 .nav{
     display: flex;
@@ -168,28 +173,24 @@
 }
 
 .social{
-    cursor: pointer;
     display: flex;
     margin-left: auto;
     align-items: center;
-}
-
-.social  p {
-    margin-left: 10px;
+    cursor: pointer;
 }
 
 .like{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 107px;
+    width: 140px;
     height: 36px;
     background-color: #e4e4e4;
     border-radius: 30px;
 }
 
-.dislike{
-    margin-left: 5px;
+.like > i{
+    margin: 0 10px;
 }
 
 .share{
@@ -236,24 +237,31 @@
     margin-left: 10px;
 }
 
+.im{
+    margin-right: 10px;
+}
 /* //////////////////// */
 
 
 .uni-v{
-    cursor: pointer;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 168px 1fr 1fr;
+    grid-template-areas:
+		"imagem txt txt"
+        "imagem txt txt"
+		;
+    cursor: pointer;
     margin-bottom: 10px;
     grid-gap: 10px;
 }
 
 .uni-v > img{
-    grid-row: 1/3;
+    grid-area: imagem;
     border-radius: 8px;
 }
 
 .textos{
-    grid-column: 2/4;
+    grid-area: txt;
 }
 
 .textos > h5{
@@ -261,6 +269,7 @@
     margin: 0px;
 }
 .textos > h4{
+    color: #0f0f0f;
     margin: 0px;
     margin-bottom: 8px
 }
